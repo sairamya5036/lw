@@ -1,0 +1,52 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/calculator": [
+                "calculator/calculator.js"
+            ],
+            "c/createContactFromAccount": [
+                "createContactFromAccount/createContactFromAccount.js"
+            ],
+            "c/displayToastMessage": [
+                "displayToastMessage/displayToastMessage.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/multipleComponentsRender": [
+                "multipleComponentsRender/multipleComponentsRender.js"
+            ],
+            "c/myComponent": [
+                "myComponent/myComponent.js"
+            ],
+            "c/myFirstLWC": [
+                "myFirstLWC/myFirstLWC.js"
+            ],
+            "c/serviceNotification": [
+                "serviceNotification/serviceNotification.js"
+            ],
+            "c/compositionBasics": [
+                "compositionBasics/compositionBasics.js"
+            ],
+            "c/contactTile": [
+                "contactTile/contactTile.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title = "Your CalC!" icon-name= "custom:custom63">
+            <!--<lightning-icon icon-name= "custom:custom63" size ="small"></lightning-icon>-->
+            
+        <div class="slds-m-around_medium">  
+       
+        
+            <lightning-input value={firstNumber} name="fnumber" label="First Number" onchange={handleChanges} ></lightning-input>
+            <lightning-input value={secondNumber} name="snumber" label="Second Number" onchange={handleChanges}></lightning-input>
+            
+            <lightning-combobox
+                name="operation"
+                label="Operation"
+                value={value}
+                options={options}
+                onchange={handleOpChange} 
+                required>
+            </lightning-combobox>
+            <div class="slds-align_absolute-center" style="height:5rem">  
+           
+                <lightning-button
+                    class="slds-button slds-button_brand"
+                    variant="brand"
+                    label="Submit"
+                    title="Begins the task"
+                    onclick={calculateResult}>
+                </lightning-button>
+
+                <lightning-button
+                    class="slds-button slds-button_brand"
+                        variant="brand"
+                        label="Reset"
+                        title="Begins the task"
+                        onclick={handleReset}>
+                </lightning-button>
+            </div>
+            <div class="slds-align_absolute-center" style="height:2rem">        
+                <lightning-badge title ="Your Result! :)" class = "slds-badge .slds-theme_success" label ={result}></lightning-badge>
+            </div>
+        </div>
+        
+           
+        
+    </lightning-card>
+</template>

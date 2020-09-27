@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting}!</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+            <!-- You Did Conditional Rendering!:) start  -->
+            <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+            <template if:true={areDetailsVisible}>
+                <div class="slds-m-vertical_medium">
+                    These are the details!
+                    You Did Conditional Rendering!:)
+                </div>
+            </template>
+            <!-- You Did Conditional Rendering!:) End  -->
+            
+        </div>
+    </lightning-card>
+</template>
